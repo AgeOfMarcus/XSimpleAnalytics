@@ -7,7 +7,7 @@ from io import BytesIO
 
 app = Flask(__name__)
 blank_px = b64decode('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')
-pb = PocketBase('https://pb.marcusj.tech')
+pb = PocketBase('<POCKETBASE_URL>')
 ipinfo = getHandler('<IPINFO_TOKEN>')
 
 @app.route('/blog/<string:post_slug>/image.png')
